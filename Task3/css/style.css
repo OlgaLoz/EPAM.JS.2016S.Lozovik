@@ -30,18 +30,30 @@
 	text-align: center;
 }
 
-.disabled-button{
+.button-container .disabled{
+	pointer-events: none;
 	cursor: default;
 	background-color: gray;
 }
 
-button{
-	display: block;
+.button-container div{
+	text-align: center;
 	margin: 10px auto;
 	width: 100px;
 	height: 30px;
 	background-color: #555555;
     color: white;
-    border: 0px;
     cursor: pointer;
+}
+
+.color-red{
+	background-color: #f44336;
+}
+
+.color-orange{
+	background-color: #ff9800;
+}
+
+.color-green{
+	background-color: #4caf50;
 }

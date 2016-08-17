@@ -1,0 +1,159 @@
+body{
+	margin: 0px;
+	padding: 50px 0px;
+	background-color: #E9E6F4;
+}
+
+.game{
+	padding: 15px;
+	margin: auto;
+	width: 1240px;
+	
+}
+
+.header{
+    margin-bottom: 20px;
+}
+
+.header div:last-child{
+	text-align: right;
+}
+
+.container{
+	height: 700px;
+	box-shadow: inset 0 0 20px  white, 0 0 20px #7E6DC0;
+}
+
+.narrow{
+	width: 200px;
+	margin: 20px 10px;
+	float: left;
+	height: 660px;
+}
+
+.center{
+	position: relative;
+	width: 800px;
+	float: left;
+	height: 680px;
+	margin: 10px 0px;
+	outline: 1px solid #555555;
+	box-shadow: inset 0 0 20px  white, 0 0 20px #7E6DC0;	
+}
+
+.resource-home{
+	width: 200px;
+	height: 200px;
+	border-radius: 10%;
+	box-shadow: inset 0 0 20px  white, 0 0 20px #7E6DC0;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.resource-home:nth-child(2n-1){
+	margin-bottom: 260px;
+}
+
+p{
+	text-align: center;
+	font-family: verdana, arial, "Comic Sans MS";
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+
+button{
+	background-color: #4CAF50;
+	background-image: url(../img/play.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100px;
+	height: 80px;
+	border: 0px;
+	border-radius: 5px;
+	transition-duration: 0.5s;
+
+}
+
+button:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:last-child{
+	background-color: #f44336;
+	background-image: url(../img/stop.png);
+}
+
+.pause-button{
+	background-color: #008CBA;
+	background-image: url(../img/pause.png);
+}
+
+.resource{
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	cursor: pointer;
+	opacity: 0.1;
+}
+
+.resource.bomb{
+	cursor: default;
+}
+
+.resource p{
+	color: #4CAF50;
+}
+
+.resource.plus p:before{
+	content: "+";
+}
+
+.resource.minus p:before{
+	content: "-";
+}
+
+.resource.minus p{
+	color: #f44336;
+}
+
+.avoid-clicks {
+  -webkit-user-select: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+.score, .level{
+	margin: 25px 0px;
+	float: left;
+	width: 350px;
+}
+
+.score p:before{
+	content: "Total score: "
+}
+
+.level p:before{
+	content: "Level: "
+}
+
+.peach{
+	background-image: url(../img/peach.png);
+}
+
+.coconut{
+	background-image: url(../img/coconut.png);	
+}
+
+.passion{
+	background-image: url(../img/passion.png);
+}
+
+.watermelon{
+	background-image: url(../img/watermelon.png);
+}
+
+.bomb{
+	background-image: url(../img/bomb.png);
+}
